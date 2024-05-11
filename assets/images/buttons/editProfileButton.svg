@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="545.07" height="86.559" viewBox="0 0 545.07 86.559">
+  <g id="Group_2681" data-name="Group 2681" transform="translate(-86.876 -1148.283)">
+    <g id="Diet_plan" data-name="Diet plan" transform="translate(86.876 1148.283)">
+      <rect id="Rectangle_536" data-name="Rectangle 536" width="545.07" height="86.559" rx="10" transform="translate(0)" fill="#fcfbfb"/>
+      <text id="Edit_Profile" data-name="Edit Profile" transform="translate(164.148 52.733)" fill="#070707" font-size="25" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-60.925" y="0">Edit Profile</tspan></text>
+      <g id="diet_plan_list" data-name="diet plan list" transform="matrix(0.998, -0.07, 0.07, 0.998, 482.999, 32.302)">
+        <line id="Line_17" data-name="Line 17" y1="11.402" x2="13.065" transform="translate(0 11.519)" fill="none" stroke="#090909" stroke-linecap="round" stroke-width="2"/>
+        <path id="Path_44" data-name="Path 44" d="M0,0,12.937,11.489" transform="translate(0.128 0)" fill="none" stroke="#090909" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+    <path id="Icon_material-settings-input-component" data-name="Icon material-settings-input-component" d="M7.5,3a1.5,1.5,0,0,0-3,0V9h-3v9h9V9h-3Zm6,21a4.516,4.516,0,0,0,3,4.23V34.5h3V28.23a4.486,4.486,0,0,0,3-4.23V21h-9Zm-12,0a4.516,4.516,0,0,0,3,4.23V34.5h3V28.23a4.516,4.516,0,0,0,3-4.23V21h-9Zm30-15V3a1.5,1.5,0,0,0-3,0V9h-3v9h9V9Zm-12-6a1.5,1.5,0,0,0-3,0V9h-3v9h9V9h-3Zm6,21a4.516,4.516,0,0,0,3,4.23V34.5h3V28.23a4.486,4.486,0,0,0,3-4.23V21h-9Z" transform="translate(118.324 1173.562)" fill="#f3d249"/>
+  </g>
+</svg>

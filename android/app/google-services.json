@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "595794346344",
+    "firebase_url": "https://inpark-5a693-default-rtdb.firebaseio.com",
+    "project_id": "inpark-5a693",
+    "storage_bucket": "inpark-5a693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595794346344:android:e3cfec12e84ed3a3a916dd",
+        "android_client_info": {
+          "package_name": "com.example.inpark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595794346344-9lblcd2fs3deopmifjf50cc9is3022c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAesx0GANv4-I5x2LtQy6MwJrHos3CjKgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595794346344-9lblcd2fs3deopmifjf50cc9is3022c6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "595794346344-bqa5c5cclm6nrqg7a0p2317bsd7n7o94.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.inpark"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595794346344:android:72673057576730d5a916dd",
+        "android_client_info": {
+          "package_name": "com.example.inparkmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595794346344-9lblcd2fs3deopmifjf50cc9is3022c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAesx0GANv4-I5x2LtQy6MwJrHos3CjKgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595794346344-9lblcd2fs3deopmifjf50cc9is3022c6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "595794346344-bqa5c5cclm6nrqg7a0p2317bsd7n7o94.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.inpark"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="547.123" height="86.638" viewBox="0 0 547.123 86.638">
+  <g id="Group_2682" data-name="Group 2682" transform="translate(0)">
+    <rect id="Rectangle_511" data-name="Rectangle 511" width="547.123" height="86.638" rx="12" transform="translate(0)" fill="#fcfbfb"/>
+    <g id="Group_2613" data-name="Group 2613" transform="translate(39.459 25.772)">
+      <g id="logout" transform="translate(0 0)">
+        <g id="Group_2598" data-name="Group 2598" transform="translate(11.16 13.462)">
+          <g id="Group_2597" data-name="Group 2597" transform="translate(0 0)">
+            <path id="Path_334" data-name="Path 334" d="M175.86,205.454l-4.1-2.889a1.123,1.123,0,0,0-1.769.917v1.767H150.317a1.122,1.122,0,1,0,0,2.244h19.676v1.767a1.123,1.123,0,0,0,1.769.917l4.1-2.889A1.124,1.124,0,0,0,175.86,205.454Z" transform="translate(-149.195 -202.358)" fill="#f1c40e"/>
+          </g>
+        </g>
+        <g id="Group_2600" data-name="Group 2600" transform="translate(0 0)">
+          <g id="Group_2599" data-name="Group 2599" transform="translate(0 0)">
+            <path id="Path_335" data-name="Path 335" d="M32.2,47.076a1.122,1.122,0,0,0-1.533.409,15.23,15.23,0,1,1,0-15.229,1.122,1.122,0,1,0,1.943-1.124,17.474,17.474,0,1,0,0,17.476A1.122,1.122,0,0,0,32.2,47.076Z" transform="translate(0 -22.397)" fill="#f1c40e"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="Log_Out" data-name="Log Out" transform="translate(148.934 51.297)" fill="#070707" font-size="25" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-43.811" y="0">Log Out</tspan></text>
+  </g>
+</svg>
