@@ -25,7 +25,7 @@ class _SignUpState extends State<SignUp> {
       resizeToAvoidBottomInset: true,
       extendBodyBehindAppBar: true,
       extendBody: true,
-      backgroundColor: const Color(0xffe4a300),
+      backgroundColor: const Color(0xff0425BF),
       body: SingleChildScrollView(
         padding: EdgeInsets.zero,
           physics: BouncingScrollPhysics(),

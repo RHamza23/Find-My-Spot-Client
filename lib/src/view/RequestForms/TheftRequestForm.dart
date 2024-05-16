@@ -71,6 +71,7 @@ class _TheftRequestFormState extends State<TheftRequestForm> {
             Align(
               alignment: Alignment.topRight,
               child: Image.asset(
+                color: PrimaryColor,
                 requestFormCurves,
                 height: 150,
                 width: 140,

@@ -72,7 +72,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SvgPicture.asset(
+                      Image.asset(
                         _pages[index]['image'],
                         height: 400,
                         width: 500
@@ -85,7 +85,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ),
           Stack(
             children: [
-              SvgPicture.asset(
+              Image.asset(
                   welcomeCurve,
                   // height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
@@ -97,7 +97,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     Text(
                       _pages[currentPage]['caption'],
                       style: TextStyle(
-
+                        color: Colors.white,
                         fontSize: 24.0,
                         fontWeight: FontWeight.bold,
                       ),

@@ -33,12 +33,14 @@ Widget CustomNavigationBar1({required IconData icon , required Function onClick2
                     icon: Icon(
                       Icons.home_outlined,
                       size: 30,
+                      color: Colors.white,
                     )),
                 IconButton(
                     onPressed: () {onClick2ndicon();},
                     icon: Icon(
                         icon,
                       size: 30,
+                      color: Colors.white
                     )),
               ],
             ),

@@ -59,7 +59,7 @@ class _splashScreenState extends State<splashScreen> {
               style: TextStyle(
                 fontFamily: 'Lobster',
                 fontSize: 25,
-                color: const Color(0xffe4a300),
+                color: const Color(0xff0425BF),
                 height: 0.4,
               ),
             ),

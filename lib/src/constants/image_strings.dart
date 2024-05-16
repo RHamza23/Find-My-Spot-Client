@@ -2,11 +2,10 @@
 
 const String SplashImage = "assets/images/splashimages/inparklogo.svg";
 
-const String welcomeScreen1 = "assets/images/welcomeScreen/welcomeImage1.svg";
-const String welcomeScreen2 = "assets/images/welcomeScreen/welcomeimage2.svg";
-const String welcomeScreen3 = "assets/images/welcomeScreen/welcomeimage3.svg";
-const String welcomeCurve = "assets/images/welcomeScreen/curves.svg";
-const String welcomeCurve2 = "assets/images/welcomeScreen/curves2.png";
+const String welcomeScreen1 = "assets/images/welcomeScreen/welcome1.jpg";
+const String welcomeScreen2 = "assets/images/welcomeScreen/welcome2.jpg";
+const String welcomeScreen3 = "assets/images/welcomeScreen/welcome3.jpg";
+const String welcomeCurve = "assets/images/welcomeScreen/WelcomeCurve.jpg";
 
 
 const String getStartedCurve = "assets/images/getStarted/getStartedcurve.png";
@@ -45,7 +44,7 @@ const String rectangleCurve  = "assets/images/Curves/rectangleCurve.svg";
 
 
 // Card List View
-const String inparkCard  = "assets/images/dashboard/inparkCard.svg";
+const String inparkCard  = "assets/images/dashboard/card.jpg";
 const String parkingDetailCard  = "assets/images/dashboard/parkinDetailCard.svg";
 
 

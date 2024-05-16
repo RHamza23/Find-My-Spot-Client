@@ -113,6 +113,7 @@ class _profileState extends State<profile> {
             Padding(
               padding: const EdgeInsets.only(top: 210),
               child: Image.asset(
+                color: Colors.white,
                 SignUpCurve,
                 width: MediaQuery
                     .of(context)

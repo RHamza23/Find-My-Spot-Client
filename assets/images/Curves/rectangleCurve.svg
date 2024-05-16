@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 375">
-  <g id="Rectangle_4382" data-name="Rectangle 4382" fill="#dda007" stroke="#707070" stroke-width="1">
+  <g id="Rectangle_4382" data-name="Rectangle 4382" fill="#0425BF" stroke="#0425BF" stroke-width="1">
     <path d="M0,0H720a0,0,0,0,1,0,0V305a70,70,0,0,1-70,70H70A70,70,0,0,1,0,305V0A0,0,0,0,1,0,0Z" stroke="none"/>
     <path d="M1,.5H719a.5.5,0,0,1,.5.5V305A69.5,69.5,0,0,1,650,374.5H70A69.5,69.5,0,0,1,.5,305V1A.5.5,0,0,1,1,.5Z" fill="none"/>
   </g>

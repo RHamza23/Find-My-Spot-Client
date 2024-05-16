@@ -23,7 +23,6 @@ class setting extends StatefulWidget {
 }
 
 class _settingState extends State<setting> {
-
   @override
   Widget build(BuildContext context) {
     final _auth = FirebaseAuth.instance;
@@ -39,10 +38,8 @@ class _settingState extends State<setting> {
             onClick2ndicon: () {
               Get.to(wallet());
             }),
-        floatingActionButtonLocation:
-            FloatingActionButtonLocation.miniCenterDocked,
-        floatingActionButton:
-            FloatingActionButtonWithNotched(onClickAction: () {}),
+        floatingActionButtonLocation: FloatingActionButtonLocation.miniCenterDocked,
+        floatingActionButton: FloatingActionButtonWithNotched(onClickAction: () {}),
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -73,56 +70,14 @@ class _settingState extends State<setting> {
                   child: Column(
                     children: [
                       Container(
-                        height: MediaQuery.of(context).size.height/3,
+                        height: MediaQuery.of(context).size.height / 3,
                         child: FutureBuilder(
                           future: _profileController.getUserDetails(),
                           builder: (context, snapshot) {
-                            if (snapshot.connectionState ==
-                                ConnectionState.done) {
+                            if (snapshot.connectionState == ConnectionState.done) {
                               if (snapshot.hasData) {
                                 UserModel userData = snapshot.data as UserModel;
                                 if (userData.profileImage != null && userData.profileImage!.isNotEmpty) {
-                               return Column(
-                                 children: [
-                                   Container(
-                                       width: 150,
-                                       height: 150,
-                                       decoration: BoxDecoration(
-                                         shape: BoxShape.circle,
-                                         color: Colors.grey[700],
-                                         border: Border.all(
-                                             color: Colors.white,
-                                             width: 5.0,
-                                             style: BorderStyle.solid),
-                                       ),
-                                       child: ClipOval(
-                                         child: Image.network(
-                                           userData.profileImage!,
-                                           fit: BoxFit.cover,
-                                         ),
-                                       )
-                                   ),
-
-                                   SizedBox(height: 10),
-                                   Text(
-                                     userData.name,
-                                     style: TextStyle(
-                                         fontSize: 25,
-                                         fontWeight: FontWeight.bold,
-                                         color: Colors.white,
-                                         fontFamily: 'Roboto'),
-                                   ),
-                                   SizedBox(height: 5),
-                                   Text(
-                                     userData.email,
-                                     style: TextStyle(
-                                         fontSize: 16, color: Colors.white),
-                                   ),
-                                   SizedBox(height: 40),
-                                 ],
-                               );
-                                }
-                                else{
                                   return Column(
                                     children: [
                                       Container(
@@ -131,16 +86,15 @@ class _settingState extends State<setting> {
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: Colors.grey[700],
-                                            border: Border.all(
-                                                color: Colors.white,
-                                                width: 5.0,
-                                                style: BorderStyle.solid),
+                                            border:
+                                                Border.all(color: Colors.white, width: 5.0, style: BorderStyle.solid),
                                           ),
                                           child: ClipOval(
-                                            child: SvgPicture.asset(personIcon)
-                                          )
-                                      ),
-
+                                            child: Image.network(
+                                              userData.profileImage!,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          )),
                                       SizedBox(height: 10),
                                       Text(
                                         userData.name,
@@ -153,17 +107,44 @@ class _settingState extends State<setting> {
                                       SizedBox(height: 5),
                                       Text(
                                         userData.email,
+                                        style: TextStyle(fontSize: 16, color: Colors.white),
+                                      ),
+                                      SizedBox(height: 40),
+                                    ],
+                                  );
+                                } else {
+                                  return Column(
+                                    children: [
+                                      Container(
+                                          width: 150,
+                                          height: 150,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            color: Colors.grey[700],
+                                            border:
+                                                Border.all(color: Colors.white, width: 5.0, style: BorderStyle.solid),
+                                          ),
+                                          child: ClipOval(child: SvgPicture.asset(personIcon))),
+                                      SizedBox(height: 10),
+                                      Text(
+                                        userData.name,
                                         style: TextStyle(
-                                            fontSize: 16, color: Colors.white),
+                                            fontSize: 25,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                            fontFamily: 'Roboto'),
+                                      ),
+                                      SizedBox(height: 5),
+                                      Text(
+                                        userData.email,
+                                        style: TextStyle(fontSize: 16, color: Colors.white),
                                       ),
                                       SizedBox(height: 40),
                                     ],
                                   );
                                 }
                               } else if (snapshot.hasError) {
-                                return Center(
-                                  child: CircularProgressIndicator()
-                                );
+                                return Center(child: CircularProgressIndicator());
                               } else {
                                 return const Center(
                                   child: CircularProgressIndicator(),
@@ -187,51 +168,69 @@ class _settingState extends State<setting> {
                           style: TextStyle(fontSize: 20),
                         ),
                         style: ElevatedButton.styleFrom(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 30, vertical: 13),
+                          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 13),
                           backgroundColor: PrimaryColor,
                         ),
                       ),
                       SizedBox(height: 3),
-                      Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                                height: 60,
-                                width: 350,
-                                child: IconButton(
-                                    onPressed: () {
-                                      Get.to(RequestVehicleForm());
-                                    },
-                                    icon:
-                                        SvgPicture.asset(requestVehicleButton))),
-                            Container(
-                                height: 60,
-                                width: 350,
-                                child: IconButton(
-                                    onPressed: () {
-                                      Get.to(TheftRequestForm());
-                                    },
-                                    icon: SvgPicture.asset(theftRequestButton))),
-                            Container(
-                                height: 60,
-                                width: 350,
-                                child: IconButton(
-                                    onPressed: () {
-                                      Get.to(profile());
-                                    },
-                                    icon: SvgPicture.asset(editProfileButton))),
-                            Container(
-                                height: 60,
-                                width: 350,
-                                child: IconButton(
-                                    onPressed: () {
-                                      _auth
-                                          .signOut()
-                                          .then((value) => Get.to(SignIn()));
-                                    },
-                                    icon: SvgPicture.asset(logoutButton))),
-                          ]),
+                      Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                        InkWell(
+                            onTap: () {
+                              Get.to(RequestVehicleForm());
+                            },
+                            child: ListTile(
+                              contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 75),
+                              minLeadingWidth: 25,
+                              leading: Icon(
+                                Icons.request_page,
+                                color: PrimaryColor,
+                              ),
+                              title: Text('Request Vehicle'),
+                              trailing: Icon(Icons.chevron_right),
+                            )),
+                        InkWell(
+                            onTap: () {
+                              Get.to(TheftRequestForm());
+                            },
+                            child: ListTile(
+                              contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 75),
+                              minLeadingWidth: 25,
+                              leading: Icon(
+                                Icons.car_crash,
+                                color: PrimaryColor,
+                              ),
+                              title: Text('Theft Request'),
+                              trailing: Icon(Icons.chevron_right),
+                            )),
+                        InkWell(
+                            onTap: () {
+                              Get.to(profile());
+                            },
+                            child: ListTile(
+                              contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 75),
+                              minLeadingWidth: 25,
+                              leading: Icon(
+                                Icons.settings,
+                                color: PrimaryColor,
+                              ),
+                              title: Text('Edit Profile'),
+                              trailing: Icon(Icons.chevron_right),
+                            )),
+                        InkWell(
+                            onTap: () {
+                              _auth.signOut().then((value) => Get.to(SignIn()));
+                            },
+                            child: ListTile(
+                              contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 75),
+                              minLeadingWidth: 25,
+                              leading: Icon(
+                                Icons.logout,
+                                color: PrimaryColor,
+                              ),
+                              title: Text('Log Out'),
+                              trailing: Icon(Icons.chevron_right),
+                            )),
+                      ]),
                     ],
                   ),
                 ),

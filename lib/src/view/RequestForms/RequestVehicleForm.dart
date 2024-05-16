@@ -61,6 +61,7 @@ class _RequestVehicleFormState extends State<RequestVehicleForm> {
               alignment: Alignment.topRight,
               child: Image.asset(
                 requestFormCurves,
+                color: PrimaryColor,
                 height: 150,
                 width: 140,
               ),

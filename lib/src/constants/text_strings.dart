@@ -129,7 +129,7 @@ const String writeShortDescription = "Write a Short Description";
 //-->start of Wallet
 const String balance = "BALANCE";
 const String deposit = "DEPOSIT";
-const String latestTransection = "LATEST TRANSECTION";
+const String latestTransection = "LATEST TRANSACTIONS";
 const String bankTransfer = "Bank Transfer - JazzCash";
 const String recievedPayment = "Received Payment";
 const String more = "more>>";

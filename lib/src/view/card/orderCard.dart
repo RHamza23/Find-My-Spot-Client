@@ -45,6 +45,7 @@ class _OrderCardState extends State<OrderCard> {
               alignment: Alignment.topRight,
               child: Image.asset(
                 requestFormCurves,
+                color: PrimaryColor,
                 height: 150,
                 width: 140,
               ),

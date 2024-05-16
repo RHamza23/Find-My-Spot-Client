@@ -27,16 +27,14 @@ class _cardListViewState extends State<cardListView> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.fromLTRB(30, 0, 0, 20),
+        padding: const EdgeInsets.fromLTRB(30, 0, 20, 20),
         child: Container(
           margin: EdgeInsets.all(0.0), // Remove the default tile padding
           child: Stack(
             children: <Widget>[
               ClipRRect(
-                child: SvgPicture.asset(
+                child: Image.asset(
                   inparkCard,
-                  width: 180.0,
-                  height: 180.0,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -87,13 +85,13 @@ class _cardListViewState extends State<cardListView> {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 32, 40, 0),
+                padding: EdgeInsets.all(10),
                 child: Align(
                     alignment: Alignment.topRight,
                     child: Text(
                       widget.cardId,
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
                     )),
               ),
             ],

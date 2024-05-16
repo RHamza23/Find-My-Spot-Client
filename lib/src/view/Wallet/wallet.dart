@@ -180,27 +180,28 @@ class _walletState extends State<wallet> {
                                             style:
                                                 TextStyle(color: Colors.white),
                                           ))),
+                                          
                                 ],
                               ),
                             ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Text(
+                                  latestTransection,
+                                  style: TextStyle(
+                                    fontFamily: 'Roboto',
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1.12,
+                                  ),
+                                  textHeightBehavior: TextHeightBehavior(
+                                      applyHeightToFirstAscent: false),
+                                  softWrap: false,
+                                ),
+                            ),
                             SizedBox(
                               height: 70,
-                            ),
-                            Text(
-                              'LATEST TRANSACTIONS',
-                              style: TextStyle(
-                                fontFamily: 'Roboto',
-                                fontSize: 20,
-                                color: PrimaryColor,
-                                fontWeight: FontWeight.w500,
-                                height: 1.12,
-                              ),
-                              textHeightBehavior: TextHeightBehavior(
-                                  applyHeightToFirstAscent: false),
-                              softWrap: false,
-                            ),
-                            SizedBox(
-                              height: 30,
                             ),
                             FutureBuilder(
                                 future: _walletController.getTransections(),

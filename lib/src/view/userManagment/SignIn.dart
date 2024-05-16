@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
       resizeToAvoidBottomInset: true,
       extendBodyBehindAppBar: true,
       extendBody: true,
-      backgroundColor: const Color(0xffe4a300),
+      backgroundColor: const Color(0xff0425BF),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Stack(
@@ -41,7 +41,7 @@ class _SignInState extends State<SignIn> {
               child: SizedBox(
                 height: 300,
                 width: 300,
-                child: Image.asset(bikeImage),
+                child: Image.asset(bikeImage, color: Colors.white,),
               ),
             ),
             Padding(
