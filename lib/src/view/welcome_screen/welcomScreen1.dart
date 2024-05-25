@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/constants/text_strings.dart';
-import 'package:inpark/src/view/getStarted_screen/getStarted.dart';
+import 'package:findmyspot/src/constants/text_strings.dart';
+import 'package:findmyspot/src/view/getStarted_screen/getStarted.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../constants/image_strings.dart';
 

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/controller/signUp_controller.dart';
-import 'package:inpark/src/model/UserModel.dart';
-import 'package:inpark/src/view/userManagment/SignIn.dart';
+import 'package:findmyspot/src/controller/signUp_controller.dart';
+import 'package:findmyspot/src/model/UserModel.dart';
+import 'package:findmyspot/src/view/userManagment/SignIn.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
@@ -34,7 +33,7 @@ class _SignUpState extends State<SignUp> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(30, 40, 0, 0),
                 child: headerWidget(
-                  title: inpark,
+                  title: findmyspot,
                   color: Colors.white, FontSize: 60,
                 ),
               ),

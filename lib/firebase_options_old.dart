@@ -47,9 +47,9 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyBxOp6Z4frs_OUCn44hlEFAUUjCVXt_DaU',
     appId: '1:595794346344:web:b1c61909afc26043a916dd',
     messagingSenderId: '595794346344',
-    projectId: 'inpark-5a693',
-    authDomain: 'inpark-5a693.firebaseapp.com',
-    storageBucket: 'inpark-5a693.appspot.com',
+    projectId: 'findmyspot-5a693',
+    authDomain: 'findmyspot-5a693.firebaseapp.com',
+    storageBucket: 'findmyspot-5a693.appspot.com',
     measurementId: 'G-SQPPDZCJ2Z',
   );
 
@@ -57,27 +57,27 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyAesx0GANv4-I5x2LtQy6MwJrHos3CjKgE',
     appId: '1:595794346344:android:e3cfec12e84ed3a3a916dd',
     messagingSenderId: '595794346344',
-    projectId: 'inpark-5a693',
-    storageBucket: 'inpark-5a693.appspot.com',
+    projectId: 'findmyspot-5a693',
+    storageBucket: 'findmyspot-5a693.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBqPduVCB9zGe9-ARpzsJ6TAugorPAbhbU',
     appId: '1:595794346344:ios:2515dd7204aa5548a916dd',
     messagingSenderId: '595794346344',
-    projectId: 'inpark-5a693',
-    storageBucket: 'inpark-5a693.appspot.com',
+    projectId: 'findmyspot-5a693',
+    storageBucket: 'findmyspot-5a693.appspot.com',
     iosClientId: '595794346344-bqa5c5cclm6nrqg7a0p2317bsd7n7o94.apps.googleusercontent.com',
-    iosBundleId: 'com.example.inpark',
+    iosBundleId: 'com.example.findmyspot',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyBqPduVCB9zGe9-ARpzsJ6TAugorPAbhbU',
     appId: '1:595794346344:ios:2515dd7204aa5548a916dd',
     messagingSenderId: '595794346344',
-    projectId: 'inpark-5a693',
-    storageBucket: 'inpark-5a693.appspot.com',
+    projectId: 'findmyspot-5a693',
+    storageBucket: 'findmyspot-5a693.appspot.com',
     iosClientId: '595794346344-bqa5c5cclm6nrqg7a0p2317bsd7n7o94.apps.googleusercontent.com',
-    iosBundleId: 'com.example.inpark',
+    iosBundleId: 'com.example.findmyspot',
   );
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inpark/src/constants/colors.dart';
+import 'package:findmyspot/src/constants/colors.dart';
 
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';

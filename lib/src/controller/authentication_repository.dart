@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:inpark/src/view/userManagment/SignUp.dart';
-import 'package:inpark/src/view/welcome_screen/welcomScreen1.dart';
+import 'package:findmyspot/src/view/userManagment/SignUp.dart';
+import 'package:findmyspot/src/view/welcome_screen/welcomScreen1.dart';
 import '../view/Dashboard/dashboard.dart';
 
 class AuthenticationRepository extends GetxController{

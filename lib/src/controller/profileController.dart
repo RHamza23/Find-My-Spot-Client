@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inpark/src/controller/signUp_controller.dart';
+import 'package:findmyspot/src/controller/signUp_controller.dart';
 import '../constants/colors.dart';
 import '../model/UserModel.dart';
 import 'dart:io';

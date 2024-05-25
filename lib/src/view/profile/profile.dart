@@ -5,10 +5,10 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:inpark/src/constants/colors.dart';
-import 'package:inpark/src/controller/profileController.dart';
-import 'package:inpark/src/model/UserModel.dart';
-import 'package:inpark/src/utils/Regex/regex.dart';
+import 'package:findmyspot/src/constants/colors.dart';
+import 'package:findmyspot/src/controller/profileController.dart';
+import 'package:findmyspot/src/model/UserModel.dart';
+import 'package:findmyspot/src/utils/Regex/regex.dart';
 
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';

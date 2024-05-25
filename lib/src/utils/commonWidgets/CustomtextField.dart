@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:inpark/src/constants/colors.dart';
+import 'package:findmyspot/src/constants/colors.dart';
 
 class CustomTextField extends StatelessWidget {
   final String label;

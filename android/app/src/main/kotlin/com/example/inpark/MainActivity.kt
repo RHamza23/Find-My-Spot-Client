@@ -1,4 +1,4 @@
-package com.example.inpark
+package com.example.findmyspot
 
 import io.flutter.embedding.android.FlutterActivity
 

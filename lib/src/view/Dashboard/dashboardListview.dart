@@ -34,7 +34,7 @@ class _cardListViewState extends State<cardListView> {
             children: <Widget>[
               ClipRRect(
                 child: Image.asset(
-                  inparkCard,
+                  findmyspotCard,
                   fit: BoxFit.cover,
                 ),
               ),

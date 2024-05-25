@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:inpark/src/constants/colors.dart';
+import 'package:findmyspot/src/constants/colors.dart';
 
 import '../../constants/image_strings.dart';
 

@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inpark/src/controller/signUp_controller.dart';
-import 'package:inpark/src/model/theftRequestModel.dart';
-import 'package:inpark/src/view/Dashboard/dashboard.dart';
+import 'package:findmyspot/src/controller/signUp_controller.dart';
+import 'package:findmyspot/src/model/theftRequestModel.dart';
+import 'package:findmyspot/src/view/Dashboard/dashboard.dart';
 
 import '../constants/colors.dart';
 import '../model/secondaryVehicleRequestModel.dart';
@@ -85,7 +85,7 @@ class requestFormController extends GetxController {
         .whenComplete(() {
       Get.snackbar(
         "Success",
-        "Your Request for vehicle theft has been sent to inPark.org. You will get conformation email in 24hrs",
+        "Your Request for vehicle theft has been sent to findmyspot.org. You will get conformation email in 24hrs",
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: PrimaryColor,
         colorText: Colors.black,

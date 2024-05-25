@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:inpark/src/model/UserModel.dart';
+import 'package:findmyspot/src/model/UserModel.dart';
 import '../constants/colors.dart';
 import '../view/Dashboard/dashboard.dart';
 import '../view/userManagment/SignUp.dart';

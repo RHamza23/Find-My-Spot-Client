@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/view/userManagment/SignUp.dart';
+import 'package:findmyspot/src/view/userManagment/SignUp.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';

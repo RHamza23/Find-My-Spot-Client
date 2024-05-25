@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:inpark/src/constants/colors.dart';
-import 'package:inpark/src/model/parkingDetailModel.dart';
-import 'package:inpark/src/view/Dashboard/parkingDetailListView.dart';
+import 'package:findmyspot/src/constants/colors.dart';
+import 'package:findmyspot/src/model/parkingDetailModel.dart';
+import 'package:findmyspot/src/view/Dashboard/parkingDetailListView.dart';
 
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';

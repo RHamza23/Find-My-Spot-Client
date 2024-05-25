@@ -1,6 +1,6 @@
 
-// InPark
-const String inpark = "InPark";
+// findmyspot
+const String findmyspot = "find My Spot";
 
 // -->Start of SignIn/SighnUp Texts
 const String Signup = "Sign up";
@@ -46,7 +46,7 @@ const String discriptionScreen2 = "You can check the details of your every vehic
 
 // Splash Screen 3
 const String InstantPay = "INSTANT PAY";
-const String discriptionScreen3 = "Pay your parking fees instantly by using your InPark \nwallet.";
+const String discriptionScreen3 = "Pay your parking fees instantly by using your findmyspot \nwallet.";
 
 //-->End of Splash texts
 
@@ -65,7 +65,7 @@ const String PhoneNo = "Phone No";
 const String paymentMethod = "Payment Method";
 const String address = "Address";
 const String orderNow = "Order Now";
-const String orderCardDescriptiion = "Please note that there is a fee of Rs. 600 for ordering a card. This fee will be charged from your Inpark wallet automatically . If you have any questions or concerns about this fee, please don't hesitate to contact our customer support team for assistance";
+const String orderCardDescriptiion = "Please note that there is a fee of Rs. 600 for ordering a card. This fee will be charged from your findmyspot wallet automatically . If you have any questions or concerns about this fee, please don't hesitate to contact our customer support team for assistance";
 
 
 //-->End of Order Card Form

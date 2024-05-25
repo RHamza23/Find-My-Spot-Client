@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/constants/colors.dart';
-import 'package:inpark/src/constants/text_strings.dart';
-import 'package:inpark/src/utils/commonWidgets/ButtonWidget.dart';
-import 'package:inpark/src/utils/commonWidgets/headerText.dart';
+import 'package:findmyspot/src/constants/colors.dart';
+import 'package:findmyspot/src/constants/text_strings.dart';
+import 'package:findmyspot/src/utils/commonWidgets/ButtonWidget.dart';
+import 'package:findmyspot/src/utils/commonWidgets/headerText.dart';
 import '../../constants/image_strings.dart';
 import '../userManagment/SignIn.dart';
 import '../userManagment/SignUp.dart';
@@ -24,7 +24,7 @@ class getStarted extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 30, 0, 0),
             child: headerWidget(
-              title: inpark,
+              title: findmyspot,
               color: PrimaryColor,
               FontSize: 60,
             ),

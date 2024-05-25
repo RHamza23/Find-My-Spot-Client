@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/controller/orderCardController.dart';
-import 'package:inpark/src/model/OrderCardModel.dart';
-import 'package:inpark/src/model/UserModel.dart';
-import 'package:inpark/src/utils/Regex/regex.dart';
+import 'package:findmyspot/src/controller/orderCardController.dart';
+import 'package:findmyspot/src/model/OrderCardModel.dart';
+import 'package:findmyspot/src/model/UserModel.dart';
+import 'package:findmyspot/src/utils/Regex/regex.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
@@ -96,7 +96,7 @@ class _VehicleFormState extends State<VehicleForm> {
   final List<String> vehicleTypes = ['Car', 'Bike'];
 
   final List<String> paymentMethods = [
-    'Inpark Wallet',
+    'findmyspot Wallet',
     'easypaisa',
     'jazzcash',
     'Debit/Credit Card'

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.inpark">
+    package="com.example.findmyspot">
    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Find My Spot"

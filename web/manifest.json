@@ -1,6 +1,6 @@
 {
-    "name": "inpark",
-    "short_name": "inpark",
+    "name": "findmyspot",
+    "short_name": "findmyspot",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

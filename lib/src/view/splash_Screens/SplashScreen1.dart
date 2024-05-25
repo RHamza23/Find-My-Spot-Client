@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/view/getStarted_screen/getStarted.dart';
-import 'package:inpark/src/view/welcome_screen/welcomScreen1.dart';
+import 'package:findmyspot/src/view/getStarted_screen/getStarted.dart';
+import 'package:findmyspot/src/view/welcome_screen/welcomScreen1.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 import '../../controller/authentication_repository.dart';
@@ -35,7 +35,7 @@ class _splashScreenState extends State<splashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child:SvgPicture.asset(SplashImage,width:200 , height: 200,),
+              child:SvgPicture.asset(SplashImage, width:200 , height: 200,),
             ),
             const SizedBox(
               height: 20,
@@ -55,7 +55,7 @@ class _splashScreenState extends State<splashScreen> {
             const SizedBox(
               height: 12,
             ),
-            const Text(inpark,
+            const Text(findmyspot,
               style: TextStyle(
                 fontFamily: 'Lobster',
                 fontSize: 25,

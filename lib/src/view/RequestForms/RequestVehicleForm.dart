@@ -4,11 +4,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inpark/src/constants/colors.dart';
-import 'package:inpark/src/model/secondaryVehicleRequestModel.dart';
-import 'package:inpark/src/utils/Regex/regex.dart';
-import 'package:inpark/src/utils/commonWidgets/CustomtextField.dart';
-import 'package:inpark/src/view/Dashboard/dashboard.dart';
+import 'package:findmyspot/src/constants/colors.dart';
+import 'package:findmyspot/src/model/secondaryVehicleRequestModel.dart';
+import 'package:findmyspot/src/utils/Regex/regex.dart';
+import 'package:findmyspot/src/utils/commonWidgets/CustomtextField.dart';
+import 'package:findmyspot/src/view/Dashboard/dashboard.dart';
 
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';

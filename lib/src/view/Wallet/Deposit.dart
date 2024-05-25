@@ -3,10 +3,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:inpark/src/constants/colors.dart';
-import 'package:inpark/src/controller/walletController.dart';
-import 'package:inpark/src/model/balanceModel.dart';
-import 'package:inpark/src/view/Wallet/wallet.dart';
+import 'package:findmyspot/src/constants/colors.dart';
+import 'package:findmyspot/src/controller/walletController.dart';
+import 'package:findmyspot/src/model/balanceModel.dart';
+import 'package:findmyspot/src/view/Wallet/wallet.dart';
 
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
