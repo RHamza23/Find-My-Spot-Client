@@ -79,8 +79,7 @@ class requestFormController extends GetxController {
 
   Future<void> theftRequest(theftRequestModel request) async {
     await _firebaseFirestore
-        .collection("Admin")
-        .doc("Vehicle Theft").collection( SignUpController().getCurrentUserUid())
+        .collection("Vehicle Theft")
         .add(request.toJason())
         .whenComplete(() {
       Get.snackbar(

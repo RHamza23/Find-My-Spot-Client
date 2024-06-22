@@ -11,12 +11,12 @@ class theftRequestModel {
 
   toJason() {
     return {
-      "Name": Name,
-      "Cnic": Cnic,
-      "Vehicle No": VehicleNo,
-      "Vehicle Type": VehicleType,
-      "Date": theftDate,
-      "Complain Description": description
+      "name": Name,
+      "cnic": Cnic,
+      "vehicle_no": VehicleNo,
+      "vehicle_type": VehicleType,
+      "date": theftDate,
+      "complain_description": description
     };
   }
 }

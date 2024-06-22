@@ -33,11 +33,9 @@ class OrderCardController extends GetxController {
 
   Future<void> OrderCard(OrderCardModel order) async {
     await _firebaseFirestore
-        .collection("Admin")
-        .doc("Cards Order")
-        .collection(getCurrentUserUid())
+        .collection("Card Orders")
         .doc(order.cardId)
-        .set(order.toJason())
+        .set({'userId': getCurrentUserUid(), 'orderData': order.toJason()})
         .whenComplete(() {
       Get.snackbar("Success", "Your Order has been confirmed",
           snackPosition: SnackPosition.BOTTOM,

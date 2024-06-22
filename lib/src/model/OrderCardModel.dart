@@ -34,18 +34,18 @@ class OrderCardModel {
   toJason() {
     return {
     "UUID":uuid,
-     "Name":name,
-      "Email" : email,
-     "Card Id":cardId,
-     "Vehicle No":vehicleNo,
-     "Model":model,
-     "Company":company,
-     "Vehicle Type":vehicleType,
-     "Phone No":phoneNo,
-     "Payment Method":paymentMethod,
-     "Address":address,
-     "Card Valid":valid,
-     "Order Status":orderStatus,
+     "name":name,
+     "email" : email,
+     "card_id":cardId,
+     "vehicle_no":vehicleNo,
+     "model":model,
+     "company":company,
+     "vehicle_type":vehicleType,
+     "phone_no":phoneNo,
+     "payment_method":paymentMethod,
+     "address":address,
+     "card_valid":valid,
+     "order_status":orderStatus,
 
 
 
@@ -57,19 +57,19 @@ class OrderCardModel {
       DocumentSnapshot<Map<String, dynamic>> document) {
     final data = document.data()!;
     return OrderCardModel(
-        uuid: data["UUID"],
-        name: data["Name"],
-        email: data["Email"],
-      cardId: data["Card Id"],
-      vehicleNo: data["Vehicle No"],
-      model: data["Model"],
-      company: data["Company"],
-      vehicleType: data["Vehicle Type"],
-      phoneNo: data["Phone No"],
-      paymentMethod: data["Payment Method"],
-      address: data["Address"],
-      valid: data["Card Valid"],
-      orderStatus: data["Order Status"],
+        uuid: data['orderData']["UUID"],
+        name: data['orderData']["name"],
+        email: data['orderData']["email"],
+      cardId: data['orderData']["card_id"],
+      vehicleNo: data['orderData']["vehicle_no"],
+      model: data['orderData']["model"],
+      company: data['orderData']["company"],
+      vehicleType: data['orderData']["vehicle_type"],
+      phoneNo: data['orderData']["phone_no"],
+      paymentMethod: data['orderData']["payment_method"],
+      address: data['orderData']["address"],
+      valid: data['orderData']["card_valid"],
+      orderStatus: data['orderData']["order_status"],
 
 
 

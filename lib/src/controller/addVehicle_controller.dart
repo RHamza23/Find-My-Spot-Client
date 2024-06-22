@@ -30,15 +30,14 @@ class  AddVehicleController extends GetxController{
 
 
   Future<void> adddCard(String vehicleNo, String name, String cardId) async {
-    final CollectionReference vehicleCardsRef =
-    FirebaseFirestore.instance.collection('Admin').doc("Cards Order").collection(SignUpController().getCurrentUserUid().toString());
-    final DocumentSnapshot cardSnapshot =
-    await vehicleCardsRef.doc(cardId).get();
-
-    if (cardSnapshot.exists) {
-      final Map<String, dynamic>? data = cardSnapshot.data() as Map<String, dynamic>?;
-
-      if (data?['Vehicle No'] == vehicleNo && data?['Name'] == name) {
+    final Query<Map<String, dynamic>> vehicleCardsRef =
+    FirebaseFirestore.instance.collection('Card Orders').where('userId', isEqualTo: SignUpController().getCurrentUserUid().toString()).limit(1);
+    final QuerySnapshot<Map<String, dynamic>> cardSnapshot =
+    await vehicleCardsRef.get();
+    QueryDocumentSnapshot<Map<String, dynamic>> card = cardSnapshot.docs.first;
+    if (cardSnapshot.docs.isNotEmpty) {
+      final Map<String, dynamic>? data = card.data();
+      if (data?['orderData']['vehicle_no'] == vehicleNo && data?['orderData']['name'] == name) {
         final DocumentReference cardsRef =
         FirebaseFirestore.instance.collection('Client').doc(SignUpController().getCurrentUserUid().toString()).collection("cards").doc(cardId);
 
