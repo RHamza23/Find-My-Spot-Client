@@ -1,24 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:findmyspot/src/controller/signUp_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/src/snackbar/snackbar.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:findmyspot/src/controller/signUp_controller.dart';
 
 import '../constants/colors.dart';
-import '../model/AddVehicleModel.dart';
 import '../model/OrderCardModel.dart';
-import '../model/cardInformationModel.dart';
 import '../model/parkingDetailModel.dart';
 
 class  AddVehicleController extends GetxController{
 
   static AddVehicleController get instance =>  Get.find();
   //variables
-  final _auth = FirebaseAuth.instance;
-  final _db = FirebaseFirestore.instance;
 
 
   // TextField Controllers to get data from textfields
@@ -41,11 +33,11 @@ class  AddVehicleController extends GetxController{
         final DocumentReference cardsRef =
         FirebaseFirestore.instance.collection('Client').doc(SignUpController().getCurrentUserUid().toString()).collection("cards").doc(cardId);
 
-        await cardsRef.set(data!).whenComplete(() => {
-        Get.snackbar("Success", "Your Card has been successfully added to your account",
+        await cardsRef.set(data!).whenComplete(()  {
+        return Get.snackbar("Success", "Your Card has been successfully added to your account",
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: PrimaryColor,
-        colorText: Colors.black),
+        colorText: Colors.black);
 
         }); // use ! to assert that data is not null
       } else {
@@ -94,9 +86,8 @@ class  AddVehicleController extends GetxController{
         .collection('cards')
         .doc(cardId)
         .collection('parkingDetails')
-        .where('Location', isGreaterThanOrEqualTo: searchString)
-        .where('Location', isLessThan: searchString + '\uf8ff')
         .get();
+        print(snapshot.docs.length);
     final userdata =
     snapshot.docs.map((e) => parkingDetailModel.fromSnapshot(e)).toList();
     return userdata;
