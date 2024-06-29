@@ -160,7 +160,7 @@ class _depositMoneyState extends State<depositMoney> {
                   ListTileTheme(
                     horizontalTitleGap: 0,
                     child: RadioListTile(
-                    title: Image.asset(creditDepitButton, color: PrimaryColor),
+                    title: Image.asset(creditDepitButton),
                     value: creditDepit,
                     groupValue: depositMethod,
                     onChanged: (value) {
@@ -173,7 +173,7 @@ class _depositMoneyState extends State<depositMoney> {
               ListTileTheme(
                 horizontalTitleGap: 0,
                 child:  RadioListTile(
-                    title: Image.asset(easypaisaButton, color: PrimaryColor,),
+                    title: Image.asset(easypaisaButton),
                     value: easypaisa,
                     groupValue: depositMethod,
                     onChanged: (value) {
@@ -186,7 +186,7 @@ class _depositMoneyState extends State<depositMoney> {
               ListTileTheme(
                 horizontalTitleGap: 0,
                 child: RadioListTile(
-                    title: Image.asset(jazzcashButton, color: PrimaryColor,),
+                    title: Image.asset(jazzcashButton, ),
                     value: jazzCash,
                     groupValue: depositMethod,
                     onChanged: (value) {

@@ -34,7 +34,7 @@ class _SignUpState extends State<SignUp> {
                 padding: const EdgeInsets.fromLTRB(30, 40, 0, 0),
                 child: headerWidget(
                   title: findmyspot,
-                  color: Colors.white, FontSize: 60,
+                  color: Colors.white, FontSize: 40,
                 ),
               ),
               Padding(

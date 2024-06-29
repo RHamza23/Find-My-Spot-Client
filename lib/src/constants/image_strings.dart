@@ -32,9 +32,9 @@ const String editProfileButton = "assets/images/buttons/editProfileButton.svg";
 const String logoutButton = "assets/images/buttons/logoutButton.svg";
 
 // deposit screen button
-const String creditDepitButton = "assets/images/buttons/deposit/creditDebitButton.png";
-const String easypaisaButton = "assets/images/buttons/deposit/easypaisaButton.png";
-const String jazzcashButton = "assets/images/buttons/deposit/jazzcashButton.png";
+const String creditDepitButton = "assets/images/buttons/deposit/creditDebitButton.jpg";
+const String easypaisaButton = "assets/images/buttons/deposit/easypaisaButton.jpg";
+const String jazzcashButton = "assets/images/buttons/deposit/jazzcashButton.jpg";
 
 //Order Card
 const String topCurve  = "assets/images/Curves/topCurve.png";
