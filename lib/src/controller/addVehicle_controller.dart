@@ -37,7 +37,7 @@ class  AddVehicleController extends GetxController{
         return Get.snackbar("Success", "Your Card has been successfully added to your account",
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: PrimaryColor,
-        colorText: Colors.black);
+        colorText: Colors.white);
 
         }); // use ! to assert that data is not null
       } else {

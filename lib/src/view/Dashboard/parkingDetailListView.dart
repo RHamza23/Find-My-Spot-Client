@@ -29,87 +29,87 @@ class parkingDetailListView extends StatefulWidget {
 class _parkingDetailListViewState extends State<parkingDetailListView> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.fromLTRB(12, 0, 12, 20),
-        child: Container(
-          margin: EdgeInsets.all(0.0), // Remove the default tile padding
-          child: Stack(
+    return Container(
+      alignment: Alignment.center,
+      margin: EdgeInsets.all(0.0), // Remove the default tile padding
+      child: Stack(
+        children: <Widget>[
+          Align(
+            alignment: Alignment.center,
+            child: SvgPicture.asset(
+              parkingDetailCard,
+              width:180,
+              height: 180.0,
+              fit: BoxFit.cover,
+            ),
+          ),
+          SizedBox(width: 16.0), // Add spacing between the image and text
+          Column(
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              ClipRRect(
-                child: SvgPicture.asset(
-                  parkingDetailCard,
-                  width:180,
-                  height: 180.0,
-                  fit: BoxFit.cover,
+              Padding(
+                padding: const EdgeInsets.only(top: 35),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                  "Location: " + widget.location ,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                       ),
+                  ),
                 ),
               ),
-              SizedBox(width: 16.0), // Add spacing between the image and text
-              Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 35),
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                      "Location: " + widget.location ,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 20,
-                           ),
-                      ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(75, 20, 0, 0),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child:  Text(
+                    widget.timeIn ,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontFamily: 'Roboto',
+                      fontSize: 15,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(35, 20, 0, 0),
-                    child: Align(
-                      alignment: Alignment.topLeft,
-                      child:  Text(
-                        widget.timeIn ,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontFamily: 'Roboto',
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
+                ),
+              ),
 
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 73, 55, 0),
-                child: Align(
-                    alignment: Alignment.topRight,
-                    child: Text(
-                      widget.timeOut,
-                      style:
-                      TextStyle(fontSize: 15,),
-                    )),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(35, 73, 55, 0),
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      widget.totalTime,
-                      style:
-                      TextStyle(fontSize: 15,),
-                    )),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(35, 125, 55, 0),
-                child: Align(
-                    alignment: Alignment.bottomRight,
-                    child: Text(
-                    "RS " + widget.fees,
-                      style:
-                      TextStyle(fontSize: 20,color: PrimaryColor),
-                    )),
-              ),
             ],
           ),
-        ));
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 73, 85, 0),
+            child: Align(
+                alignment: Alignment.topRight,
+                child: Text(
+                  widget.timeOut,
+                  style:
+                  TextStyle(fontSize: 15,),
+                )),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(35, 73, 55, 0),
+            child: Align(
+                alignment: Alignment.center,
+                child: Text(
+                  widget.totalTime,
+                  style:
+                  TextStyle(fontSize: 15,),
+                )),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(35, 125, 85, 0),
+            child: Align(
+                alignment: Alignment.bottomRight,
+                child: Text(
+                "RS " + widget.fees,
+                  style:
+                  TextStyle(fontSize: 20,color: PrimaryColor),
+                )),
+          ),
+        ],
+      ),
+    );
   }
 }

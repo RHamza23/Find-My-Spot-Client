@@ -13,6 +13,7 @@
     final String paymentMethod;
     final String address;
     final String valid;
+    final String cardStatus;
     final String orderStatus;
 
     OrderCardModel({
@@ -28,6 +29,7 @@
       required this.paymentMethod,
       required this.address,
       required this.valid,
+      required this.cardStatus,
       required this.orderStatus,
     } );
 
@@ -45,6 +47,7 @@
       "payment_method":paymentMethod,
       "address":address,
       "card_valid":valid,
+      "card_status": cardStatus,
       "order_status":orderStatus,
 
 
@@ -70,6 +73,7 @@
         address: data['orderData']["address"],
         valid: data['orderData']["card_valid"],
         orderStatus: data['orderData']["order_status"],
+        cardStatus: data['orderData']["card_status"],
       );
     }
   }

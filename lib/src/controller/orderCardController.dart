@@ -40,7 +40,7 @@ class OrderCardController extends GetxController {
       Get.snackbar("Success", "Your Order has been confirmed",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
       Get.to(Dashboard());
     }).catchError((error, stackTrace) {
       Get.snackbar("Error", "Something went wrong. Try Again",

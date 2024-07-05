@@ -56,7 +56,7 @@ class requestFormController extends GetxController {
                         "Your Request for Secondary vehicle has been sent to parking manager",
                         snackPosition: SnackPosition.BOTTOM,
                         backgroundColor: PrimaryColor,
-                        colorText: Colors.black),
+                        colorText: Colors.white),
                     Get.to(Dashboard())
                   });
         }).catchError((error, stackTrace) {
@@ -87,7 +87,7 @@ class requestFormController extends GetxController {
         "Your Request for vehicle theft has been sent to findmyspot.org. You will get conformation email in 24hrs",
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: PrimaryColor,
-        colorText: Colors.black,
+        colorText: Colors.white,
         duration: Duration(seconds: 10),
       );
     }).catchError((error, stackTrace) {

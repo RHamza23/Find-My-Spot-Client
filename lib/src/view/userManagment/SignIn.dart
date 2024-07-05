@@ -120,7 +120,7 @@ class _SignInState extends State<SignIn> {
                                 "Success", "Login Successfully",
                                 snackPosition: SnackPosition.BOTTOM,
                                 backgroundColor: PrimaryColor,
-                                colorText: Colors.black),
+                                colorText: Colors.white),
                             Get.to(Dashboard())
                           }
                         else

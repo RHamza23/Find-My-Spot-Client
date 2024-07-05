@@ -46,7 +46,7 @@ class profileController extends GetxController {
       Get.snackbar("Success", "Your profile has been updated",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black
+          colorText: Colors.white
       )
     });
   }

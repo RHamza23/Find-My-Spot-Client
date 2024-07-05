@@ -30,11 +30,12 @@ class _TheftRequestFormState extends State<TheftRequestForm> {
   DateTime? selectedDate;
 
   Future<void> _selectDate(BuildContext context) async {
+    print('Select Date');
     final DateTime? picked = await showDatePicker(
         context: context,
         initialDate: selectedDate ?? DateTime.now(),
-        firstDate: DateTime(2000),
-        lastDate: DateTime(2024));
+        firstDate: DateTime(2024),
+        lastDate: DateTime(2030));
     if (picked != null && picked != selectedDate) {
       setState(() {
         selectedDate = picked;
@@ -148,10 +149,10 @@ class _TheftRequestFormState extends State<TheftRequestForm> {
                           controller: _requestFormController.vehicleNoController,
                           type: TextInputType.text),
                       SizedBox(height: 20),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 215),
+                      Container(
+                        alignment: Alignment.centerLeft,
                         child: Text(
-                          'Vehicle Type',
+                          'Vehicle Type',        
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: SecondaryColor,
@@ -184,8 +185,8 @@ class _TheftRequestFormState extends State<TheftRequestForm> {
                         },
                       ),
                       SizedBox(height: 20),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 255),
+                      Container(
+                        alignment: Alignment.centerLeft,
                         child: Text(
                           "Date",
                           style: TextStyle(
@@ -214,8 +215,8 @@ class _TheftRequestFormState extends State<TheftRequestForm> {
                         },
                       ),
                       SizedBox(height: 20),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 200),
+                      Container(
+                        alignment: Alignment.centerLeft,
                         child: Text(
                           description,
                           style: TextStyle(

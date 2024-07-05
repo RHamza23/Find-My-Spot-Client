@@ -440,6 +440,7 @@ class _VehicleFormState extends State<VehicleForm> {
                             paymentMethod:
                             controller.paymentMethodController.text.trim(),
                             address: controller.addressController.text.trim(),
+                            cardStatus: 'Out',
                             valid: "12/27",
                             orderStatus: "Order Confirmed");
                         OrderCardController.instance.deductCardFee(orderdetail)

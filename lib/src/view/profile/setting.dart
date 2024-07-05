@@ -70,94 +70,48 @@ class _settingState extends State<setting> {
                   child: Column(
                     children: [
                       Container(
-                        height: MediaQuery.of(context).size.height / 3,
-                        child: FutureBuilder(
-                          future: _profileController.getUserDetails(),
-                          builder: (context, snapshot) {
-                            if (snapshot.connectionState == ConnectionState.done) {
-                              if (snapshot.hasData) {
-                                UserModel userData = snapshot.data as UserModel;
-                                if (userData.profileImage != null && userData.profileImage!.isNotEmpty) {
-                                  return Column(
-                                    children: [
-                                      Container(
-                                          width: 150,
-                                          height: 150,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: Colors.grey[700],
-                                            border:
-                                                Border.all(color: Colors.white, width: 5.0, style: BorderStyle.solid),
-                                          ),
-                                          child: ClipOval(
-                                            child: Image.network(
-                                              userData.profileImage!,
-                                              fit: BoxFit.cover,
+                          height: MediaQuery.of(context).size.height / 2.8,
+                          child: FutureBuilder(
+                              future: _profileController.getUserDetails(),
+                              builder: (context, snapshot) {
+                                if (snapshot.connectionState == ConnectionState.done) {
+                                  if (snapshot.hasData) {
+                                    UserModel userData = snapshot.data as UserModel;
+
+                                    return Column(
+                                      children: [
+                                        Container(
+                                            width: 150,
+                                            height: 150,
+                                            decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.grey[700],
+                                              border:
+                                                  Border.all(color: Colors.white, width: 5.0, style: BorderStyle.solid),
                                             ),
-                                          )),
-                                      SizedBox(height: 10),
-                                      Text(
-                                        userData.name,
-                                        style: TextStyle(
-                                            fontSize: 25,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            fontFamily: 'Roboto'),
-                                      ),
-                                      SizedBox(height: 5),
-                                      Text(
-                                        userData.email,
-                                        style: TextStyle(fontSize: 16, color: Colors.white),
-                                      ),
-                                      SizedBox(height: 40),
-                                    ],
-                                  );
-                                } else {
-                                  return Column(
-                                    children: [
-                                      Container(
-                                          width: 150,
-                                          height: 150,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: Colors.grey[700],
-                                            border:
-                                                Border.all(color: Colors.white, width: 5.0, style: BorderStyle.solid),
-                                          ),
-                                          child: ClipOval(child: SvgPicture.asset(personIcon))),
-                                      SizedBox(height: 10),
-                                      Text(
-                                        userData.name,
-                                        style: TextStyle(
-                                            fontSize: 25,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            fontFamily: 'Roboto'),
-                                      ),
-                                      SizedBox(height: 5),
-                                      Text(
-                                        userData.email,
-                                        style: TextStyle(fontSize: 16, color: Colors.white),
-                                      ),
-                                      SizedBox(height: 40),
-                                    ],
-                                  );
+                                            child: ClipOval(child: SvgPicture.asset(personIcon))),
+                                        SizedBox(height: 10),
+                                        Text(
+                                          userData.name,
+                                          style: TextStyle(
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontFamily: 'Roboto'),
+                                        ),
+                                        SizedBox(height: 5),
+                                        Text(
+                                          userData.email,
+                                          style: TextStyle(fontSize: 16, color: Colors.white),
+                                        ),
+                                        SizedBox(height: 40),
+                                      ],
+                                    );
+                                  }
+                                  return Container();
                                 }
-                              } else if (snapshot.hasError) {
-                                return Center(child: CircularProgressIndicator());
-                              } else {
-                                return const Center(
-                                  child: CircularProgressIndicator(),
-                                );
-                              }
-                            } else {
-                              return const Center(
-                                child: CircularProgressIndicator(),
-                              );
-                            }
-                          },
-                        ),
-                      ),
+                                return Container();
+                              })),
                       ElevatedButton(
                         onPressed: () {
                           Get.to(wallet());

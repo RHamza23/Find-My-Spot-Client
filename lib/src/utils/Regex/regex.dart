@@ -14,7 +14,7 @@ extension Regex on String {
   }
   bool get isValidName {
     final nameRegExp = new RegExp(
-        r"^\s*([A-Za-z]{1,}([\.,] |[-']| ))+[A-Za-z]+\.?\s*$");
+        r"^[a-zA-Z\s]+$");
     return nameRegExp.hasMatch(this);
   }
 
@@ -30,7 +30,7 @@ extension Regex on String {
   }
   bool get isValidVehicleNumber{
     final vehicleNoRegExp =
-    RegExp(r"^[A-Z]{3}-\d{4}$");
+    RegExp(r"^[a-zA-Z]{1,3}-\d{1,4}$");
     return vehicleNoRegExp.hasMatch(this);
   }
   bool get isValidCnicNumber{

@@ -97,10 +97,10 @@ class _DashboardState extends State<Dashboard> {
                           .size
                           .width,
                       fit: BoxFit.fill,
-                      height: MediaQuery
-                          .of(context)
-                          .size
-                          .height/4
+                      // height: MediaQuery
+                      //     .of(context)
+                      //     .size
+                      //     .height/4
                   ),
                   Column(
                       children:[ Align(
@@ -203,7 +203,7 @@ class _DashboardState extends State<Dashboard> {
               controller: controller.fullnameController,
               type: TextInputType.text,
               validator: (val) {
-                if (val!.isValidName == false) return 'Enter valid Phone';
+                if (val!.isValidName == false) return 'Enter valid Name';
               },
             ),
             const SizedBox(

@@ -41,16 +41,17 @@ class _cardListViewState extends State<cardListView> {
               Column(
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child: Text(
-                        widget.vehicleType+ ": "+ widget.vehicleCompany,
-                        style: const TextStyle(
-                            fontFamily: 'Roboto-Bold',
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold),
-                      ),
+                      // child: Text(
+                      //   widget.vehicleType+ ": "+ widget.vehicleCompany,
+                      //   style: const TextStyle(
+                      //       fontFamily: 'Roboto-Bold',
+                      //       fontSize: 15,
+                      //       fontWeight: FontWeight.bold,
+                      //       color: Colors.white),
+                      // ),
                     ),
                   ),
                   Padding(
@@ -76,7 +77,8 @@ class _cardListViewState extends State<cardListView> {
                         style: const TextStyle(
                             fontFamily: 'Roboto-Bold',
                             fontSize: 30,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       ),
                     ),
                   ),
@@ -91,7 +93,7 @@ class _cardListViewState extends State<cardListView> {
                     child: Text(
                       widget.cardId,
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                     )),
               ),
             ],

@@ -28,7 +28,7 @@ class walletController extends GetxController {
       Get.snackbar("Success", "Amount has Been deposit to your account",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     }).catchError((error, stackTrace) {
       Get.snackbar("Error", "Something went wrong. Try Again",
           snackPosition: SnackPosition.BOTTOM,
